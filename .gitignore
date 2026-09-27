@@ -1,0 +1,41 @@
+# ─── Credentials & secrets ────────────────────────────────────────────────────
+/auth.json
+/trust.json
+/models.json
+/credentials*.json
+/secrets*.json
+/tokens*.json
+*.pem
+*.key
+.env
+.env.*
+!/.env.example
+!/.env.sample
+
+# ─── Conversation / orchestration state (may contain private work) ────────────
+# Sessions and run history can reference client and internal project names.
+/sessions/
+/missions/
+/run-history.jsonl
+
+# ─── Machine-local runtime state & caches ─────────────────────────────────────
+/models-store.json
+/mcp-cache.json
+/cache/
+/tmp/
+*.log
+
+# ─── Host-managed integrations & machine-specific binaries ────────────────────
+# These are generated/tied to this machine's Orca install, not portable.
+/extensions/orca-*.ts
+/bin/
+
+# ─── Local overrides (see settings.example.json) ──────────────────────────────
+/settings.json
+
+# ─── Installed packages and downloaded package sources ────────────────────────
+/npm/node_modules/
+/git/
+
+# ─── OS metadata ──────────────────────────────────────────────────────────────
+.DS_Store

@@ -1,0 +1,8 @@
+{
+  "theme": "light",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "deepseek-v4.1-flash",
+  "defaultThinkingLevel": "high",
+  "packages": ["npm:pi-subagents"],
+  "hideThinkingBlock": true
+}
