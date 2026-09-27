@@ -77,8 +77,9 @@ Forces the model to describe **what each tool call is for**, then renders a comp
 - **Rolling window ("ring")**: keeps the last `N` items (default 8, counting thinking runs and tool
   calls together, in transcript order) visible; older ones are hidden from the transcript without
   touching the session. User messages and assistant text are never counted or hidden.
-  - **ctrl+shift+e** toggles between the ring and the full transcript.
-  - `/ring <n>`, `/ring all`, `/ring off` change the window.
+  - **ctrl+shift+e** toggles between the ring and the full transcript; the status toast reads
+    `Transcript: last N items (thinking + tools)`.
+  - `/ring <n>` (e.g. `/ring 4`), `/ring all`, `/ring off` change the window size.
 - Tool rows are hidden through normal renderers (`renderShell: "self"` + an empty component).
   Collapsed **thinking** runs are plain `Text` inside Pi's `AssistantMessageComponent`, which no
   extension hook can hide — that requires the companion patch in
