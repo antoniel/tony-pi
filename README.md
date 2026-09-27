@@ -1,7 +1,11 @@
-# pi-agent-config
+# tony-pi
 
 Personal configuration for the [Pi](https://github.com/earendil-works/pi-coding-agent) coding
 agent: extensions, skills, a support script, and config examples.
+
+```bash
+git clone https://github.com/antoniel/tony-pi.git
+```
 
 This repository is **sanitized for publication**. Everything that can carry private work or
 machine-local state — sessions, missions, run history, credentials, model catalogs, caches and
